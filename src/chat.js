@@ -48,7 +48,7 @@ router.post('/api/chat', express.json(), async (req, res) => {
             {
                 role: "system",
                 content: ROLE_DESC, 
-                attachments: context, 
+                knowledge: context, 
                 temperature: temperature
             }];
         prompt = prompt.concat(history)
